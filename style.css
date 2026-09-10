@@ -1,1 +1,52 @@
+/* Header */
+.header {
+  background-color: #292524; /* azul oscuro tipo slate-900 */
+  padding: 0.5rem 4rem;
+  margin: -1rem -1rem;
+}
+
+/* Nav */
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 1px;
+}
+
+/* Logo */
+.logo {
+  color: #f97316; /* naranja */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Items */
+.nav-item {
+  color: #ffffff;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.nav-item:hover {
+  color: #f97316;
+}
+
+/* Botón Hablemos */
+.subtitulo {
+  border: 2px solid #f97316;
+  color: #f97316;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.subtitulo:hover {
+  background-color: #f97316;
+  color: #111827;
+}
 
