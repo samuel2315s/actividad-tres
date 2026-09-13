@@ -53,3 +53,19 @@
   color: #111827;
 }
 
+/*es el hero de la imagen*/
+.img-hero{
+  display: flex;
+  justify-content: center;
+    margin: 5rem 4rem 8rem 10rem;
+    padding: 2rem;
+    width: 90vh;
+    height: 65vh;
+
+}
+.hero-title {
+  color: #f97316;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -5rem;
+}
