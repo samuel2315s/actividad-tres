@@ -18,6 +18,7 @@
   padding: 1px;
 }
 
+
 /* Logo */
 .logo {
   color: #f97316; /* naranja */
@@ -57,15 +58,57 @@
 .img-hero{
   display: flex;
   justify-content: center;
-    margin: 5rem 4rem 8rem 10rem;
+    margin: 3rem 2rem 6rem 8rem;
     padding: 2rem;
-    width: 90vh;
-    height: 65vh;
+    width: 70vh;
+    height: 35vh;
 
 }
 .hero-title {
-  color: #f97316;
-  font-size: 3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: -7rem;
+}
+
+.hero-description {
+  color: #a8a29e;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: -1rem;
+}
+
+.hero-button {
+ border: 2px solid #f97316;
+  background-color: #f97316;
+  color: black;
+  padding:  0.3rem 1rem;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: 10rem;
+  font-family: arial, sans-serif;
+}
+.footer{
+  background-color: #0c0a09; /* azul oscuro tipo slate-900 */
+  padding: 1rem 4rem;
+  margin-top: 7rem;
+  font-size: 0.6rem;
+  width: 100%;
   text-align: center;
-  margin-top: -5rem;
+}
+
+.footer-text {
+  color: #78716c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+  margin-top: 0.5rem;
+  text-align: center;
 }
