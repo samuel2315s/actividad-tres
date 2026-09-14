@@ -1,114 +1,150 @@
-/* Header */
-.body{
-    background-color:#1c1917; 
-}
-.header {
-  background-color: #292524; /* azul oscuro tipo slate-900 */
-  padding: 0.5rem 4rem;
-  margin: -1rem -1rem;
-}
+ * { box-sizing: border-box; }
 
-/* Nav */
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 1px;
-}
+  .body{
+    background-color:#1c1917;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
 
+  /* Header */
+  .header {
+    background-color: #292524;
+    padding: 1rem 4rem;
+  }
 
-/* Logo */
-.logo {
-  color: #f97316; /* naranja */
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-/* Items */
-.nav-item {
-  color: #ffffff;
-  margin: 0 1rem;
-  cursor: pointer;
-  text-transform: capitalize;
-}
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.nav-item:hover {
-  color: #f97316;
-}
+  .logo {
+    color: #f97316;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
 
-/* Botón Hablemos */
-.subtitulo {
-  border: 2px solid #f97316;
-  color: #f97316;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  font-size: 1rem;
-  cursor: pointer;
-}
+  .nav-item {
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  .nav-item:hover { color: #f97316; }
 
-.subtitulo:hover {
-  background-color: #f97316;
-  color: #111827;
-}
+  .subtitulo {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0;
+    font-weight: normal;
+  }
+  .subtitulo:hover { background-color: #f97316; color: #111827; }
 
-/*es el hero de la imagen*/
-.img-hero{
-  display: flex;
-  justify-content: center;
-    margin: 3rem 2rem 6rem 8rem;
-    padding: 2rem;
-    width: 70vh;
-    height: 35vh;
+  /* Hero: dos columnas lado a lado */
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 5rem 38rem 6rem 17rem;
+  }
 
-}
-.hero-title {
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 55px;
-  text-align: left;
-  margin-left: 10rem;
-  margin-top: -7rem;
-}
+  .hero-left { flex: 1.3; }
+  .hero-right { flex: 1; display: flex; flex-direction: column; gap: 1rem; }
 
-.hero-description {
-  color: #a8a29e;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400px;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 10rem;
-  margin-top: -1rem;
-}
+  .img-hero{
+    width: 100%;
+    max-width: 580px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 2rem;
+  }
 
-.hero-button {
- border: 2px solid #f97316;
-  background-color: #f97316;
-  color: black;
-  padding:  0.3rem 1rem;
-  border-radius: 15px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  margin-left: 10rem;
-  font-family: arial, sans-serif;
-}
-.footer{
-  background-color: #0c0a09; /* azul oscuro tipo slate-900 */
-  padding: 1rem 4rem;
-  margin-top: 7rem;
-  font-size: 0.6rem;
-  width: 100%;
-  text-align: center;
-}
+  .hero-title {
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 1.25rem 0;
+  }
 
-.footer-text {
-  color: #78716c;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400px;
-  font-size: 20px;
-  margin-top: 0.5rem;
-  text-align: center;
-}
+  .hero-description {
+    color: #a8a29e;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 34ch;
+    margin: 0 0 2rem 0;
+  }
+
+  .hero-button {
+    border: none;
+    background-color: #f97316;
+    color: #111827;
+    padding: 0.75rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  /* Tarjetas de servicios */
+  .card {
+    display: flex;
+    gap: 1rem;
+    background-color: #292524;
+    border-radius: 10px;
+    padding: 1.5rem;
+    
+  }
+
+  .card-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    color: #f97316;
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem 0;
+  }
+
+  .card-text {
+    color: #d6d3d1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* Footer */
+  .footer{
+    background-color: #0c0a09;
+    padding: 1.5rem 4rem;
+    text-align: center;
+  }
+  .footer-text {
+    color: #78716c;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+ 
